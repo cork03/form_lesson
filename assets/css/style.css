@@ -65,3 +65,128 @@
   font-size: 12px;
   text-align: center;
 }
+
+.form-content-title {
+  text-align: center;
+  margin: 20px 0;
+  position: relative;
+}
+
+.form-content-title::before {
+  width: 100%;
+  position: absolute;
+  content: "";
+  height: 1px;
+  background-color: #ececec;
+  top: 50%;
+  left: 0;
+}
+
+.form-content-title__text {
+  padding: 0 10px;
+  color: #949697;
+  font-size: 12px;
+  background-color: #fff;
+  display: inline-block;
+  position: relative;
+}
+
+.form-content-name {
+  display: flex;
+}
+
+.form-content-name :first-child {
+  margin-left: 0;
+}
+
+.form-content-name-item {
+  width: 50%;
+  margin-left: 16px;
+}
+
+.label {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #545658;
+}
+
+.alert {
+  color: #dd4b39;
+}
+
+.input {
+  width: 100%;
+  height: 36px;
+  padding: 5px;
+  color: #545658;
+  font-size: 13px;
+  line-height: 2;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.form-content-gender-item {
+  display: flex;
+  color: #545658;
+  font-size: 16px;
+}
+
+.form-content-gender-item :first-child {
+  margin-left: 0;
+}
+
+.form-content-gender-item-label {
+  margin-left: 15px;
+}
+
+.form-content-hometown {
+  width: 50%;
+}
+
+.section-margin-bottom {
+  margin-bottom: 20px;
+}
+
+.form-content-course-item {
+  margin-bottom: 10px;
+  color: #545658;
+  font-size: 16px;
+}
+
+.form-content-remark__textarea {
+  height: 100px;
+}
+
+.form-content-submit__button {
+  padding: 13px;
+  background-color: #01bfbd;
+  color: #fff;
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  font-size: 13px;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+}
+
+.form-content-terms {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.link {
+  color: #01a6a4;
+}
+
+.confirmation {
+  text-align: center;
+  font-size: 12px;
+}
+
+.confirmation__text {
+  margin-bottom: 8px;
+}
