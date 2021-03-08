@@ -271,6 +271,7 @@
 /* form remark */
 .form-content-remark__textarea {
   height: 100px;
+  resize: none;
 }
 
 /* form submit */
@@ -299,9 +300,14 @@
   text-align: center;
   font-size: 12px;
   margin-top: 32px;
+  padding-bottom: 8px;
 }
 
 .confirmation__text {
   margin-top: 8px;
   display: block;
+}
+
+.confirmation p {
+  line-height: 16px;
 }
