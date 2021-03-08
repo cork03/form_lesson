@@ -285,6 +285,10 @@
   margin-left: 0;
 }
 
+.form-content-submit .button:hover {
+  background-color: #01a6a4;
+}
+
 /* form terms */
 .form-content-terms {
   font-size: 12px;
@@ -293,6 +297,10 @@
 
 .link {
   color: #01a6a4;
+}
+
+.link:hover {
+  color: #01bfbd;
 }
 
 /* confirmation */
@@ -310,4 +318,8 @@
 
 .confirmation p {
   line-height: 16px;
+}
+
+.confirmation .link:hover {
+  text-decoration: underline;
 }
