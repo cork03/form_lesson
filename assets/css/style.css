@@ -29,6 +29,27 @@
   margin-top: 20px;
 }
 
+.input {
+  width: 100%;
+  height: 36px;
+  padding: 5px;
+  color: #545658;
+  font-size: 13px;
+  line-height: 2;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  outline: none;
+}
+
+.input:focus {
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgb(1 191 189 / 10%);
+}
+
 .button {
   padding: 13px;
   font-size: 13px;
@@ -130,20 +151,6 @@
 
 .alert {
   color: #dd4b39;
-}
-
-.input {
-  width: 100%;
-  height: 36px;
-  padding: 5px;
-  color: #545658;
-  font-size: 13px;
-  line-height: 2;
-  background-color: #fbfbfb;
-  border: 1px solid #d9d9d9;
-  border-radius: 3px;
-  box-sizing: border-box;
-  margin-top: 5px;
 }
 
 /* form gender */
@@ -287,6 +294,13 @@
 
 .form-content-submit .button:hover {
   background-color: #01a6a4;
+}
+
+.form-content-submit .button:active {
+  background-color: #fff;
+  color: #01a6a4;
+  border: 1px solid #d9d9d9;
+  outline: none;
 }
 
 /* form terms */
