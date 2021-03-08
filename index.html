@@ -15,9 +15,9 @@
         <div class="form">
           <h1 class="form__title">アカウント作成</h1>
           <div class="form-start">
-            <div class="form-start-buttons">
-              <a href="#" class="form-start__button facebook">Facebookでスタート</a>
-              <a href="#" class="form-start__button google">Googleでスタート</a>
+            <div class="form-start-contents">
+              <a href="#" class="button facebook">Facebookでスタート</a>
+              <a href="#" class="button google">Googleでスタート</a>
             </div>
             <p class="form-start__text">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
           </div>
@@ -25,7 +25,7 @@
             <p class="form-content-title__text">アカウント情報</p>
           </div>
           <form class="form-content">
-            <div class="form-content-name section-margin-bottom">
+            <div class="form-content-name section-margin-top">
               <div class="form-content-name-item">
                 <p class="label">名字<span class="alert"> ※</span></p>
                 <input type="text" class="input">
@@ -35,26 +35,32 @@
                 <input type="text" class="input">
               </div>
             </div>
-            <div class="form-content-gender section-margin-bottom">
+            <div class="form-content-gender section-margin-top">
               <p class="label">性別</p>
-              <div class="form-content-gender-item">
-                <label class="form-content-gender-item-label">
-                  <input type="radio" name="gender" value="male" class="form-gender-content-label__input">
-                  <span>男性</span>
-                </label>
-                <label class="form-content-gender-item-label">
-                  <input type="radio" name="gender" value="female" class="form-gender-content-label__input">
-                  <span>女性</span>
-                </label>
-                <label class="form-content-gender-item-label">
-                  <input type="radio" name="gender" value="other" class="form-gender-content-label__input">
-                  <span>その他</span>
-                </label>
-              </div>
+              <ul class="form-content-gender-item">
+                <li>
+                  <label>
+                    <input type="radio" name="gender" value="male" class="form-gender-content-label__input">
+                    <span>男性</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" name="gender" value="female" class="form-gender-content-label__input">
+                    <span>女性</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="radio" name="gender" value="other" class="form-gender-content-label__input">
+                    <span>その他</span>
+                  </label>
+                </li>
+              </ul>
             </div>
-            <div class="form-content-hometown section-margin-bottom">
+            <div class="form-content-hometown section-margin-top">
               <p class="label">出身</p>
-              <div class="form-content-hometown-content">
+              <div class="form-content-hometown-item">
                 <select name="origin" class="input">
                   <option value="東京">東京</option>
                   <option value="千葉">千葉</option>
@@ -63,49 +69,57 @@
                 </select>
               </div>
             </div>
-            <div class="form-content-email section-margin-bottom">
+            <div class="form-content-email section-margin-top">
               <p class="label">Eメール<span class="alert"> ※</span></p>
               <input type="email" class="input input-area" name="email" placeholder="ex) hoge@example.com">
             </div>
-            <div class="form-content-tel section-margin-bottom">
+            <div class="form-content-tel section-margin-top">
               <p class="label">電話番号</p>
               <input type="tel" class="input" name="tel" placeholder="ex) 09012345678">
             </div>
-            <div class="form-content-password section-margin-bottom">
+            <div class="form-content-password section-margin-top">
               <p class="label">パスワード<span class="alert"> ※</span></p>
               <input type="password" class="input" name="password">
             </div>
-            <div class="form-content-password section-margin-bottom">
+            <div class="form-content-password section-margin-top">
               <p class="label">パスワード(確認用)<span class="alert"> ※</span></p>
               <input type="password" class="input" name="password">
             </div>
-            <div class="form-content-course section-margin-bottom">
+            <div class="form-content-course section-margin-top">
               <p class="label">希望コース</p>
-              <div class="form-content-course-item">
-                <input type="checkbox" name="course" value="frontend">
-                <span>フロントエンド</span>
-              </div>
-              <div class="form-content-course-item">
-                <input type="checkbox" name="course" value="backend" id="backend">
-                <span>バックエンド</span>
-              </div>
-              <div class="form-content-course-item">
-                <input type="checkbox" name="course" value="app" id="app">
-                <span>アプリ</span>
-              </div>
+              <ul class="form-content-course-items">
+                <li>
+                  <label>
+                    <input type="checkbox" name="course" value="frontend">
+                    <span>フロントエンド</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="course" value="backend" id="backend">
+                  <span>バックエンド</span>
+                  </label>
+                </li>
+                <li>
+                  <label>
+                    <input type="checkbox" name="course" value="app" id="app">
+                    <span>アプリ</span>
+                  </label>
+                </li>
+              </ul>
             </div>
-            <div class="form-content-remark section-margin-bottom">
+            <div class="form-content-remark section-margin-top">
               <p class="label">備考</p>
               <textarea class="input form-content-remark__textarea" name="remark" placeholder="何かあればご記入ください"></textarea>
             </div>
-            <div class="form-content-submit section-margin-bottom">
-              <input type="submit" value="アカウント作成" class="form-content-submit__button">
+            <div class="form-content-submit section-margin-top">
+              <input type="submit" value="アカウント作成" class="button">
             </div>
-            <p class="form-content-terms">アカウントを作成することにより、<a class="link" href="">利用規約</a>と<a class="link" href="">プライバシーポリシー</a>に同意するものとします。</p>
+            <p class="form-content-terms section-margin-top">アカウントを作成することにより、<a class="link" href="">利用規約</a>と<a class="link" href="">プライバシーポリシー</a>に同意するものとします。</p>
           </form>
         </div>
         <div class="confirmation">
-          <p class="confirmation__text">すでにアカウントをお持ちですか？ <a class="link" href="">ログイン</a></p>
+          <p>すでにアカウントをお持ちですか？ <a class="link" href="">ログイン</a></p>
           <a class="link confirmation__text" href="">認証メールが届きませんか？</a>
         </div>
       </div>
